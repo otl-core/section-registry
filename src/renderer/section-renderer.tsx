@@ -31,6 +31,7 @@ export default function SectionRenderer({
 }: SectionRendererProps) {
   const { type, config, id } = section;
 
+  // eslint-disable-next-line react-hooks/static-components
   const SectionComponent = sectionRegistry.get(type);
 
   if (!SectionComponent) {
